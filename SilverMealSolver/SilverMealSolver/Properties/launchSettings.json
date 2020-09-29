@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SilverMealSolver": {
+      "commandName": "Project",
+      "commandLineArgs": "-f instance.txt --heuristic"
+    }
+  }
+}

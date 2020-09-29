@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverMealSolver", "SilverMealSolver\SilverMealSolver.csproj", "{EF775372-1620-457E-B157-8CCA7F6EB02A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF775372-1620-457E-B157-8CCA7F6EB02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF775372-1620-457E-B157-8CCA7F6EB02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF775372-1620-457E-B157-8CCA7F6EB02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF775372-1620-457E-B157-8CCA7F6EB02A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72ED5D7F-D9BC-4B24-A78A-73D54D2C756C}
+	EndGlobalSection
+EndGlobal
