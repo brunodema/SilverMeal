@@ -2,7 +2,7 @@
   "profiles": {
     "SilverMealSolver": {
       "commandName": "Project",
-      "commandLineArgs": "-f instance.txt --heuristic"
+      "commandLineArgs": "-f instance.txt --compare"
     }
   }
 }

@@ -26,13 +26,15 @@ namespace SilverMeal
     {
         public double time_limit { get; set; } = double.MaxValue;
         public int max_solutions { get; set; } = int.MaxValue;
+        public bool verbose { get; set; } = false;
     }
 
     public class SilverMealExactSolver : SilverMealSolver
     {
         private SilverMealGRBVariables variables = new SilverMealGRBVariables();
         private SilverMealGRBConstraints constraints = new SilverMealGRBConstraints();
-        private GRBModel model = new GRBModel(new GRBEnv());
+        private GRBEnv env;
+        private GRBModel model;
         private SilverMealExactSolverParams parameters;
         private GRBLinExpr OFvalue = new GRBLinExpr();
 
@@ -40,7 +42,8 @@ namespace SilverMeal
         { 
             num_periods = instance.num_periods;
             parameters = p_parameters;
-
+            env = new GRBEnv() { OutputFlag = Convert.ToInt32(p_parameters.verbose)};
+            model = new GRBModel(env);
         } // should check if num_periods of instance and solution match
 
         override public double GetTotalCosts()
@@ -56,6 +59,7 @@ namespace SilverMeal
 
         public override void Run()
         {
+            Console.WriteLine("Running exact method...");
             CreateVariables();
             CreateConstraints();
             CreateObjectiveFunction();

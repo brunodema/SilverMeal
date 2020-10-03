@@ -3,6 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Bruno Eckwert Demantova</Authors>
+    <Company>Freelancer</Company>
+    <RepositoryUrl>https://github.com/brunodema/SilverMeal</RepositoryUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Simple program to solve lot-sizing problems using two algorithms: Silver-Meal and MIP formulation.</Description>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>

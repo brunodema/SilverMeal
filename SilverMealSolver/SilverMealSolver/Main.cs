@@ -63,7 +63,7 @@ namespace SilverMealSolver
             }
             else if (options.exact == true)
             {
-                ISolver solver = new SilverMealExactSolver(instance, new SilverMealExactSolverParams());
+                ISolver solver = new SilverMealExactSolver(instance, new SilverMealExactSolverParams() {verbose = options.verbose });
                 solver.PrintInstance();
                 solver.Run();
                 solver.PrintSolution();
@@ -75,7 +75,7 @@ namespace SilverMealSolver
                 solver.PrintInstance();
                 solver.Run();
                 solver.PrintSolution();
-                solver = new SilverMealExactSolver(instance, new SilverMealExactSolverParams());
+                solver = new SilverMealExactSolver(instance, new SilverMealExactSolverParams() { verbose = options.verbose });
                 solver.PrintInstance();
                 solver.Run();
                 solver.PrintSolution();

@@ -15,6 +15,7 @@ namespace SilverMeal
 
         public void Print()
         {
+            Console.WriteLine("Printing instance data:");
             Console.WriteLine($"Periods: {num_periods}, Setup Cost: {setup_cost}, Holding Cost: {holding_cost}");
             Console.WriteLine("{0,10} {1,10} {2,10} {3,10} {4,15} {5,15}", "Period", "Demand", "Batch Size", "Inventory", "Setup Cost", "Holding Cost");
             for (int i = 0; i < num_periods; i++)
@@ -79,6 +80,7 @@ namespace SilverMeal
 
         public void Print() // probably could implement something using a default method for the interface
         {
+            Console.WriteLine("Printing solution data:");
             Console.WriteLine($"Periods: {num_periods}, Setup Cost: {setup_cost}, Holding Cost: {holding_cost}");
             Console.WriteLine("{0,10} {1,10} {2,10} {3,10} {4,15} {5,15}", "Period", "Demand", "Batch Size", "Inventory", "Setup Cost", "Holding Cost");
             for (int i = 0; i < num_periods; i++)

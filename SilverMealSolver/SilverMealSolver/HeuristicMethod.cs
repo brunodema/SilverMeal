@@ -9,7 +9,7 @@ namespace SilverMeal
 {
     public class SilverMealHeuristicSolver : SilverMealSolver
     {
-        public SilverMealHeuristicSolver(ISilverMeanInstance instance) : base(instance) { num_periods = instance.num_periods; } // should check if num_periods of instance and solution match
+        public SilverMealHeuristicSolver(ISilverMeanInstance instance) : base(instance) { num_periods = instance.num_periods; } // should check if num_periods of instance and solution match. 'verbose' is not used here
 
         override public double GetTotalCosts()
         {
@@ -43,6 +43,7 @@ namespace SilverMeal
 
         public override void Run()
         {
+            Console.WriteLine("Running heuristic method...");
             InitializeSolution();
             int floor_period = 0;
             for (int i = 1; i < num_periods; i++)
